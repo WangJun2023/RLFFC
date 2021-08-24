@@ -1,7 +1,7 @@
 
-function KH = LP(X)
+function LH = LP(X)
 
-v = length(X);   % view number 
+v = length(X);   % the nuber of segmented regions
 n = size(X{1},2);
 
     for i = 1 :v
@@ -11,13 +11,13 @@ n = size(X{1},2);
         end
     end
     
-    KH = zeros(n,n,v);
+    LH = zeros(n,n,v);
     for idx = 1 : v
        A0 = constructW_PKN(X{idx}',10);
        A0 = A0-diag(diag(A0));
        A10 = (A0+A0')/2;
        D10 = diag(1./sqrt(sum(A10, 2)));
-       KH(:,:,idx) = D10*A10*D10;
+       LH(:,:,idx) = D10*A10*D10;
     end
     
 end
