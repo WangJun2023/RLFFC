@@ -2,7 +2,7 @@ clear all
 clc
 warning off;
 
-load('Salinas-40.mat');
+load('Indian_Pines-40.mat');
 
 H = LP(X1);
 
