@@ -8,7 +8,7 @@ H = LP(X1); % calculate the laplacian matrix of each segmented region
 
 d = 5; % the latent feature dimension
 
-clusternum = 10; % the selected number of bands
+clusternum = 10; % the number of selected bands
 
 view_num = size(H,3);
 num = size(H,1);
