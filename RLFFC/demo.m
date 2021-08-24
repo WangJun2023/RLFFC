@@ -18,8 +18,6 @@ for i = 1 : numker
     L_ba = L_ba + (1 / numker) * H(:,:,i);
 end
 
-H = kcenter(H);
-H = knorm(H);
 H0 = zeros(num,num);
 qnorm = 2;
 opt.disp = 0;
