@@ -24,7 +24,7 @@ iter = 0;
 
 %% Iterative Update
 while flag
-    iter = iter +1;
+    iter = iter + 1;
     for v = 1 : view_num
         Y_ba = Y_ba + gamma(v)*(YP(:,:,v)*R(:,:,v));
     end
@@ -58,7 +58,7 @@ while flag
     end
     obj(iter) = trace(F'*temp + lambda * F' * F_ba + beta * F' * L_ba * F);
    
-    %% judge convergence
+    %% verify convergence
     if (iter>2) && (abs((obj(iter-1)-obj(iter))/(obj(iter-1)))<1e-6 || iter>maxIter)
         flag =0;
     end
