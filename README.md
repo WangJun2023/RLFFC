@@ -10,8 +10,7 @@ If you have any question about the code, please send email to wang_jun@cug.edu.c
 
 If you think this code is helpful to you, please cite our paper, thanks!
 
-@article{wang2021hyperspectral,
-
+@article{wang2021hyperspectral, \\
   title={Hyperspectral band selection via region-aware latent features fusion based clustering},
   
   author={Wang, Jun and Tang, Chang and Li, Zhenglai and Liu, Xinwang and Zhang, Wei and Zhu, En and Wang, Lizhe},
@@ -21,4 +20,5 @@ If you think this code is helpful to you, please cite our paper, thanks!
   year={2021},
   
   publisher={Elsevier}
+  
 }
