@@ -1,7 +1,14 @@
 clear all
 clc
-warning off;
-
+dataset_names = {'Indian_Pines', 'Salinas', 'KSC', 'Botswana'};
+classifier_names = {'KNN', 'SVM', 'LDA'};
+svm_para = {'-c 5000.000000 -g 0.500000 -m 500 -t 2 -q',...
+    '-c 100 -g 16 -m 500 -t 2 -q',...
+    '-c 10000.000000 -g 16.000000 -m 500 -t 2 -q',...
+    '-c 10000 -g 0.5 -m 500 -t 2 -q',...
+    };
+Dataset = get_data(dataset_names{1});
+Dataset.train_ratio = 0.1;
 load('Indian_Pines-40.mat');
 
 H = LP(X1); % calculate the laplacian matrix of each segmented region
@@ -38,3 +45,5 @@ for k = 1 : length(clusternum)
     [IDX, C, SUMD, D] = kmeans(F,clusternum(k),'maxiter',100,'replicates',50,'emptyaction','singleton');
     [~,I] = min(D); % I: the selected band subset
 end
+[acc,~] = test_bs_accu(I, Dataset, 'KNN');
+
