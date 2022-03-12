@@ -1,5 +1,5 @@
 # RLFFC
-Code for "Hyperspectral Band Selection via Region-aware Latent Features Fusion Based Clustering" accepted by Informaiton Fusion 2021.
+Code for "Hyperspectral Band Selection via Region-aware Latent Features Fusion Based Clustering" accepted by Information Fusion 2021.
 
 The superpixel segmentation code can refer to <a href=https://github.com/junjun-jiang/RLPA>RLPA</a>.
 
