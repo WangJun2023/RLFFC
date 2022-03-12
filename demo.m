@@ -9,7 +9,7 @@ svm_para = {'-c 5000.000000 -g 0.500000 -m 500 -t 2 -q',...
     };
 Dataset = get_data(dataset_names{1});
 Dataset.train_ratio = 0.1;
- Dataset.svm_para = svm_para{1, 1};
+Dataset.svm_para = svm_para{1, 1};
 load('Indian_Pines-40.mat');
 
 H = LP(X1); % calculate the laplacian matrix of each segmented region
