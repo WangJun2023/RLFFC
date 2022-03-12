@@ -23,6 +23,5 @@ If you think this code is helpful to you, please cite our paper, thanks!
   
   year={2022},
   
-  publisher={Elsevier}
-  
+  publisher={Elsevier} 
 }
