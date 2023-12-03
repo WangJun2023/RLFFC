@@ -4,7 +4,7 @@ The superpixel segmentation code can refer to <a href=https://github.com/junjun-
 More datasets can be generated from the <a href=https://github.com/WangJun2023/GRSC/blob/main/GRSC/run.m>GRSC</a> or downloaded from <a href=https://pan.baidu.com/s/1895rzjvGRcr6JZLNCsDkGA>百度网盘</a>
 提取码：vxr3
 
-If you have any question about the code, please send email to wang_jun@cug.edu.cn
+If you have any question about the code, please send email to wang_jun@nudt.edu.cn
 
 If you think this code is helpful to you, please cite our paper, thanks!\
 @article{wang2022hyperspectral, \
